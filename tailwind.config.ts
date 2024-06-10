@@ -39,7 +39,8 @@ const config = {
           200: "#C1C2D3",
         },
         red: {
-          "100": "#FF0000",
+          DEFAULT: "#FF0000",
+          "100": "#d1001f",
         },
         lightRed: "#f9cbac",
         border: "hsl(var(--border))",
