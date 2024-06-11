@@ -39,7 +39,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            I am always seeking to learning new technologies.
+            I am a continuous learner with a passion for frontend design.
           </p>
 
           <a href="#about">
