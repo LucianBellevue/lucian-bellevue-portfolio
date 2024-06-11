@@ -1,3 +1,4 @@
+"use client";
 import { CiLocationArrow1 } from "react-icons/ci";
 
 import MagicButton from "./ui/MagicButton";
@@ -14,16 +15,16 @@ const Hero = () => {
         />
         <Spotlight
           className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="purple"
+          fill="red"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="red" />
       </div>
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-dot-white/[0.05] bg-dot-black-100/[0.2]
+        className="h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.03] bg-dot-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
-          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
@@ -46,6 +47,7 @@ const Hero = () => {
               title="Show my work"
               icon={<CiLocationArrow1 />}
               position='right'
+              handleClick={() => {}}
             />
           </a>
         </div>
