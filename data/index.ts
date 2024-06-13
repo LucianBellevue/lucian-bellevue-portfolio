@@ -38,7 +38,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "I love video games.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1 text-white",
       imgClassName: "",
@@ -72,11 +72,11 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "Fullstack SaaS - Podcast App",
+      des: "This is a software-as-a-service app using OpenAI to generate and play podcast episodes.",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/openai.svg"],
+      link: "https://fadedcast-fullstack-project.vercel.app/",
     },
     {
       id: 2,
@@ -88,19 +88,19 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+      title: "IP address tracker Web App",
+      des: "This is an Ip address tracker that provides location based on Ip address or domain, Using React and Leaflet API.",
       img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+      link: "https://ip-tracker-project-beryl.vercel.app/",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "My GitHub Repository",
+      des: "Visit here to see all my other projects and repositories on GitHub.",
+      img: "/github.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "three.svg"],
+      link: "https://github.com/LucianBellevue",
     },
   ];
 
@@ -138,18 +138,18 @@ export const navItems = [
   ];
 
   export const companies = [
-    {
-      id: 1,
-      name: "Twitter",
-      img: "/twit.svg",
-      nameImg: "Twitter",
-    },
-    {
-      id: 2,
-      name: "Frontend Simplified",
-      img: "",
-      nameImg: "",
-    },
+    // {
+    //   id: 1,
+    //   name: "Twitter",
+    //   img: "/twit.svg",
+    //   nameImg: "Twitter",
+    // },
+    // {
+    //   id: 2,
+    //   name: "Frontend Simplified",
+    //   img: "",
+    //   nameImg: "",
+    // },
     // {
     //   id: 3,
     //   name: "",
