@@ -2,16 +2,15 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-
 import Lottie from "react-lottie";
 
 import { cn } from "@/utils/cn";
 
-
+import { BackgroundBeams } from "./BgBeams";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import MagicButton from "../ui/MagicButton";
+import MagicButton from "./MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -74,7 +73,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-2xl border border-red/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-2xl border border-red/[0.2] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -102,15 +101,19 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              width={220}
               className="object-cover object-center w-full h-full"
             />
           )}
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            
+
           </BackgroundGradientAnimation>
+        )}
+
+        {id === 5 && (
+          <BackgroundBeams />
         )}
 
         <div
@@ -119,7 +122,7 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-lightRed z-10">
             {description}
           </div>
           <div
@@ -136,20 +139,20 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50
-                    lg:opacity-100 rounded-lg text-center bg-[#2e1010]"
+                    lg:opacity-100 rounded-lg text-center bg-[#2e101036]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#2e1010]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#2e101036]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#2e1010]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#2e101036]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50
-                    lg:opacity-100 rounded-lg text-center bg-[#2e1010]"
+                    lg:opacity-100 rounded-lg text-center bg-[#2e101036]"
                   >
                     {item}
                   </span>

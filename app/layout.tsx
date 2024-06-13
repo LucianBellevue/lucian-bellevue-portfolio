@@ -8,6 +8,9 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700", "900"] });
 export const metadata: Metadata = {
   title: "Lucian's Portfolio",
   description: "A modern E-Portfolio",
+  icons: {
+    icon:"/app/favicon.ico",
+  }
 };
 
 export default function RootLayout({
