@@ -107,12 +107,14 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-
-          </BackgroundGradientAnimation>
+          <BackgroundGradientAnimation />
         )}
 
         {id === 5 && (
+          <BackgroundBeams />
+        )}
+
+        {id === 4 && (
           <BackgroundBeams />
         )}
 
@@ -169,7 +171,7 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Email is Copied!" : "Copy email address"}
                 icon={<IoCopyOutline />}
                 position="right"
                 handleClick={handleCopy}

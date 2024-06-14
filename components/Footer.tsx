@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className="w-full pb-10 mb-[100px] md:mb-[20px]" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Your next <span className='text-red-100'>frontend developer</span> is just a click away.
+          Your next <span className='text-red-100'>full-stack developer</span> is just a click away.
         </h1>
-        <p className="text-lightRed md:mt-10 my-5 text-center">
+        <p className="text-white md:mt-10 my-5 text-center">
           Reach out to me today! I&apos;m open to new opportunities.
         </p>
         <a href="mailto:lucian@lucianbellevue.com">

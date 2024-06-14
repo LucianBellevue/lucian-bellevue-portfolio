@@ -38,12 +38,12 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "I love video games.",
+      title: "I am passionate about tech and I love playing video games",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1 text-white",
+      className: "lg:col-span-2 md:col-span-3 md:row-span-1 text-red-100",
       imgClassName: "",
       titleClassName: "justify-start",
-      img: "/retro-game.svg",
+      img: "",
       spareImg: "",
     },
 
