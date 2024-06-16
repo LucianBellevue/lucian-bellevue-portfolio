@@ -80,11 +80,11 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Coming SOON - Twitter Clone",
-      des: "This is under construction.",
-      img: "",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
-      link: "",
+      title: "Twitter Clone",
+      des: "Developed a social media app clone with functionality for posting tweets, sign-in/sign-out and more. Using Nextjs, TailwindCss, Firebase and Redux",
+      img: "p2.svg",
+      iconLists: ["/next.svg", "/tail.svg", "/js.svg", "redux.svg", "firebase.svg"],
+      link: "https://my-twitter-clone-tau.vercel.app/",
     },
     {
       id: 3,
@@ -99,7 +99,7 @@ export const navItems = [
       title: "My GitHub Repository",
       des: "Visit here to see all my other projects and repositories on GitHub.",
       img: "/github.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "three.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "three.svg", "js.svg", "html5.svg", "css2.svg", "redux.svg", "firebase.svg", "php.svg"],
       link: "https://github.com/LucianBellevue",
     },
   ];
@@ -210,7 +210,7 @@ export const navItems = [
     {
       id: 2,
       img: "/pdf.svg",
-      link: "",
+      link: "/lucianb-resume.pdf",
     },
     {
       id: 3,
