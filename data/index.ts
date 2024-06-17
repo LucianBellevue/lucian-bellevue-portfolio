@@ -99,7 +99,7 @@ export const navItems = [
       title: "My GitHub Repository",
       des: "Visit here to see all my other projects and repositories on GitHub.",
       img: "/github.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "three.svg", "js.svg", "html5.svg", "css2.svg", "redux.svg", "firebase.svg", "php.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "js.svg"],
       link: "https://github.com/LucianBellevue",
     },
   ];
