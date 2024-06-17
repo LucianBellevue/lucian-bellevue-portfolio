@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Lucian's Portfolio",
   description: "A modern E-Portfolio",
   icons: {
-    icon: "/public/favicon.ico",
+    icon: "/favicon.ico",
   }
 };
 
@@ -20,9 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" sizes="32x32" type='image/png' href="/public/favicon.ico" />
-      </head>
       <body className={roboto.className}>
           <ThemeProvider
             attribute="class"

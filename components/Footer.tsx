@@ -1,3 +1,4 @@
+
 import { CiMail } from "react-icons/ci";
 
 import { socialMedia } from "@/data";
@@ -37,6 +38,11 @@ const Footer = () => {
               </a>
             </div>
           ))}
+          <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black rounded-lg border border-red-100/[0.2] hover:scale-110 transition-all">
+            <a href="/lucianb-resume.pdf" target="_blank">
+            <img src='/pdf.svg' alt='pdf icon' width={20} height={20} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

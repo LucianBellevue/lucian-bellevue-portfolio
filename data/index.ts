@@ -207,11 +207,11 @@ export const navItems = [
       img: "/git.svg",
       link: "https://github.com/LucianBellevue",
     },
-    {
-      id: 2,
-      img: "/pdf.svg",
-      link: "/lucianb-resume.pdf",
-    },
+    // {
+    //   id: 2,
+    //   img: "/pdf.svg",
+    //   link: "/public/lucianb-resume.pdf",
+    // },
     {
       id: 3,
       img: "/link.svg",
