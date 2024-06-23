@@ -11,6 +11,41 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
+import Image from "next/image";
+import Link from "next/link";
+import { CardBody, CardContainer, CardItem } from "./3d-card";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
+
+export function ThreeDCardDemo() {
+  return (
+    <CardContainer className="inter-var">
+      <CardBody className="bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-red/[0.5] dark:bg-black dark:border-red/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem
+          translateZ="50"
+          className="text-xl font-bold text-red-100 dark:text-red-100"
+        >
+          I love coding
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-white"
+        >
+          and making magic with Nextjs
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src="/b1.svg"
+            height="1200"
+            width="1200"
+            className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
+      </CardBody>
+    </CardContainer>
+  );
+}
 
 export const BentoGrid = ({
   className,
@@ -50,8 +85,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "TailwindCSS", "Typescript"];
-  const rightLists = ["HTML5", "NextJS", "Javascript"];
+  const leftLists = ["ReactJS", "TailwindCSS", "Typescript", "CSS3"];
+  const rightLists = ["HTML5", "NextJS", "Javascript","Redux",];
 
   const [copied, setCopied] = useState(false);
 
@@ -73,7 +108,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-2xl border border-red/[0.2] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-2xl border border-red/[0.3] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
       style={{
@@ -114,8 +149,58 @@ export const BentoGridItem = ({
           <BackgroundBeams />
         )}
 
+        {id === 1 && (
+          <div
+          className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+          absolute top-0 left-0 flex items-center justify-center"
+          >
+          <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          />
+          </div>
+        )}
+
+        {id === 1 && (
+          <div className="h-full w-full flex flex-col items-center justify-center">
+           <ThreeDCardDemo />
+          </div>
+        )}
+
         {id === 4 && (
-          <BackgroundBeams />
+          <div
+          className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+          absolute top-0 left-0 flex items-center justify-center"
+          >
+          <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          />
+          </div>
+        )}
+
+        {id === 3 && (
+          <div
+          className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+          absolute top-0 left-0 flex items-center justify-center"
+          >
+          <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          />
+          </div>
+        )}
+
+        {id === 2 && (
+          <div
+          className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+          absolute top-0 left-0 flex items-center justify-center"
+          >
+          <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+          />
+          </div>
         )}
 
         <div
@@ -124,7 +209,7 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-lightRed z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-white z-10">
             {description}
           </div>
           <div

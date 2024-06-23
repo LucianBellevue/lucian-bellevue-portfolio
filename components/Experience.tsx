@@ -6,7 +6,9 @@ import { companies } from '@/data';
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full h-full dark:bg-black dark:bg-dot-red/[0.5] relative">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]" />
       <h1 className="heading">
         My <span className="text-red-100">work experience</span>
       </h1>
@@ -34,7 +36,7 @@ const Experience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold text-red-100">
                   {card.title}
                 </h1>
-                <p className="text-start text-lightRed mt-3 font-semibold">
+                <p className="text-start text-white mt-3 font-semibold">
                   {card.desc}
                 </p>
               </div>

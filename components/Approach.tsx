@@ -7,11 +7,13 @@ import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20">
-      <h1 className="heading text-center">
-        My development <span className="text-red-100">approach</span>
+    <section className=" relative w-full py-20 dark:bg-dot-red/[0.5] justify-center">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]" />
+      <h1 className="heading text-center pt-8">
+        My development <span className="text-red">approach</span>
         </h1>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
+      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4 ">
         <Card
         title="Strategy is key"
         icon={<AceternityIcon order='First Step' />}
@@ -69,7 +71,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-red/[0.3]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-red/[0.3]  dark:bg-black max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />

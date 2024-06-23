@@ -1,17 +1,19 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 import { CiLocationArrow1 } from "react-icons/ci";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-20 h-full w-full dark:bg-black dark:bg-dot-red/[0.5] relative" id="projects">
+      <div
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"
+          />
       <h1 className="heading">
         A selection of my most{" "}
-        <span className="text-red-100">recent projects</span>
+        <span className="text-red">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link}) => (
@@ -26,9 +28,8 @@ const RecentProjects = () => {
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#000000" }}
+                  style={{ backgroundColor: "rgb(0, 0, 0, 0)" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
                 </div>
                 <img
                   src={img}
@@ -66,6 +67,7 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
+
                 <div className="flex justify-center items-center">
                   <a href={link} target="_blank">
                     <p className="flex lg:text-xl md:text-xs text-sm text-red-100">
@@ -75,6 +77,53 @@ const RecentProjects = () => {
                   <CiLocationArrow1 className="ms-3" color="#ff0000" />
                 </div>
               </div>
+                {id === 1 && (
+                  <div
+                    className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+                    absolute top-0 left-0 flex items-center justify-center -z-10"
+                    >
+                    <div
+                    className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+                  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] -z-10"
+                    />
+                  </div>
+                  )}
+
+                  {id === 2 && (
+                  <div
+                    className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+                    absolute top-0 left-0 flex items-center justify-center -z-10"
+                    >
+                    <div
+                    className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+                  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] -z-10"
+                    />
+                  </div>
+                  )}
+
+                  {id === 3 && (
+                  <div
+                    className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+                    absolute top-0 left-0 flex items-center justify-center -z-10"
+                    >
+                    <div
+                    className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+                  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] -z-10"
+                    />
+                  </div>
+                  )}
+
+                  {id === 4 && (
+                  <div
+                    className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
+                    absolute top-0 left-0 flex items-center justify-center -z-10"
+                    >
+                    <div
+                    className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
+                  bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] -z-10"
+                    />
+                  </div>
+                  )}
             </PinContainer>
           </div>
         ))}
