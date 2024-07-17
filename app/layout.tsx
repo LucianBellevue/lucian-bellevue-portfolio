@@ -11,19 +11,19 @@ export type Metadata = {
   icons: {
     icon: string;
   };
-  image?: {
+  image: {
     source: string;
   };
 };
 
 export const metadata: Metadata = {
   title: "Lucian's Portfolio",
-  description: "A modern E-Portfolio",
+  description: "A modern portfolio with some of my recent projects and experience.",
   icons: {
     icon: "/favicon.ico",
   },
   image: {
-    source: "/opengraph-image.png",
+    source: "/social-img.png",
   },
 } as Metadata;
 

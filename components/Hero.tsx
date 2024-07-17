@@ -4,10 +4,11 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { socialMedia } from "@/data";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36 min-w-[640px] sm:px-10">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -21,7 +22,7 @@ const Hero = () => {
       </div>
       <div
         className="h-screen w-full dark:bg-black bg-white dark:bg-dot-red/[0.5] bg-dot-black-100/[0.5]
-       absolute top-0 left-0 flex items-center justify-center"
+       absolute top-0 left-0 flex items-center justify-center mx-auto"
       >
         <div
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black
@@ -50,6 +51,23 @@ const Hero = () => {
               handleClick={() => {}}
             />
           </a>
+          <div className="flex items-center md:gap-3 gap-6 mt-6">
+                {socialMedia.map((info) => (
+                  <div
+                    key={info.id}
+                    className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black rounded-lg border border-red-100/[0.5] hover:scale-110 transition-all"
+                  >
+                    <a href={info.link} target="_blank">
+                    <img src={info.img} alt='social icons' width={20} height={20} />
+                    </a>
+                  </div>
+                ))}
+                <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black rounded-lg border border-red-100/[0.5] hover:scale-110 transition-all">
+                  <a href="/LucianBellevueResume.pdf" target="_blank">
+                  <img src='/pdf.svg' alt='pdf icon' width={20} height={20} />
+                  </a>
+                </div>
+          </div>
         </div>
       </div>
     </div>

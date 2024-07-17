@@ -16,7 +16,7 @@ const RecentProjects = () => {
         <span className="text-red">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link}) => (
+        {projects.map(({ id, title, des, img, iconLists, link, github}) => (
           <div
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={id}
@@ -69,8 +69,14 @@ const RecentProjects = () => {
 
 
                 <div className="flex justify-center items-center">
+                  <a href={github} target="_blank">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-red-100 mr-2 hover:text-white ">
+                      Github
+                    </p>
+                  </a>
+                  <div className="flex lg:text-xl md:text-xs text-sm text-red-100 mr-2">|</div>
                   <a href={link} target="_blank">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-red-100">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-red-100 hover:text-white">
                       Live Site
                     </p>
                   </a>

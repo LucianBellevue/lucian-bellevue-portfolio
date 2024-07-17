@@ -73,10 +73,11 @@ export const navItems = [
     {
       id: 1,
       title: "Fullstack SaaS - Podcast App",
-      des: "This is a software-as-a-service app using OpenAI to generate and play podcast episodes.",
+      des: "This is a software-as-a-service app using OpenAI API to generate and play podcast episodes.",
       img: "/p1.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/openai.svg"],
       link: "https://fadedcast-fullstack-project.vercel.app/",
+      github: "https://github.com/LucianBellevue/fadedcast_fullstack_project"
     },
     {
       id: 2,
@@ -85,6 +86,7 @@ export const navItems = [
       img: "p2.svg",
       iconLists: ["/next.svg", "/tail.svg", "/js.svg", "redux.svg", "firebase.svg"],
       link: "https://my-twitter-clone-tau.vercel.app/",
+      github: "https://github.com/LucianBellevue/my-twitter-clone"
     },
     {
       id: 3,
@@ -93,51 +95,53 @@ export const navItems = [
       img: "/p3.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
       link: "https://ip-tracker-project-beryl.vercel.app/",
+      github: "https://github.com/LucianBellevue/ip-tracker-project"
     },
     {
       id: 4,
-      title: "My GitHub Repository",
-      des: "Visit here to see all my other projects and repositories on GitHub.",
-      img: "/github.svg",
+      title: "Business Website Remodel",
+      des: "Complete website development using latest frameworks like Nextjs, React and TailwindCss.",
+      img: "/p4.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "js.svg"],
-      link: "https://github.com/LucianBellevue",
+      link: "https://airotron-website.vercel.app/",
+      github: "https://github.com/LucianBellevue/airotron-website"
     },
   ];
 
-  export const testimonials = [
-    {
-      quote: "",
-      name: "",
-      title: "",
-      image: "",
-    },
-    {
-      quote: "",
-      name: "",
-      title: "",
-      image: "",
-    },
-    {
-      quote: "",
-      name: "",
-      title: "",
-      image: "",
-    },
-    {
-      quote: "",
-      name: "",
-      title: "",
-      image: "",
-    },
-    {
-      quote: "",
-      name: "",
-      title: "",
-      image: "",
-    },
-  ];
+  // export const testimonials = [
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     title: "",
+  //     image: "",
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     title: "",
+  //     image: "",
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     title: "",
+  //     image: "",
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     title: "",
+  //     image: "",
+  //   },
+  //   {
+  //     quote: "",
+  //     name: "",
+  //     title: "",
+  //     image: "",
+  //   },
+  // ];
 
-  export const companies = [
+  // export const companies = [
     // {
     //   id: 1,
     //   name: "Twitter",
@@ -168,7 +172,7 @@ export const navItems = [
     //   img: "",
     //   nameImg: "",
     // },
-  ];
+  // ];
 
   export const workExperience = [
     {

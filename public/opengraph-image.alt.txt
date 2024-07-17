@@ -1,3 +1,0 @@
-##This is an E-porfolio created with Next.js and Tailwind CSS.
-
-Author - [Lucian Bellevue](https://lucianbellevue.com)
