@@ -2,7 +2,6 @@ import React from "react";
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
-import { companies } from '@/data';
 
 const Experience = () => {
   return (
