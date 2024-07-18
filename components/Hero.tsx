@@ -8,7 +8,7 @@ import { socialMedia } from "@/data";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 min-w-[640px] sm:px-10">
+    <div className="pb-20 pt-36 sm:px-10">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"

@@ -18,8 +18,8 @@ import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 export function ThreeDCardDemo() {
   return (
-    <CardContainer className="inter-var">
-      <CardBody className="bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-red/[0.5] dark:bg-black dark:border-red/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+    <CardContainer className="inter-var m-auto px-2">
+      <CardBody className="bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-red/[0.5] dark:bg-black dark:border-red/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-12 border  ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-red-100 dark:text-red-100"
