@@ -1,10 +1,12 @@
 "use client";
+import React from "react";
 import { CiLocationArrow1 } from "react-icons/ci";
-
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { socialMedia } from "@/data";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -43,29 +45,29 @@ const Hero = () => {
             I am a continuous learner with a passion for frontend design.
           </p>
 
-          <a href="#about">
+          <Link href="#about">
             <MagicButton
               title="Show my work"
               icon={<CiLocationArrow1 />}
               position='right'
               handleClick={() => {}}
             />
-          </a>
+          </Link>
           <div className="flex items-center md:gap-3 gap-6 mt-6">
                 {socialMedia.map((info) => (
                   <div
                     key={info.id}
                     className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black rounded-lg border border-red-100/[0.5] hover:scale-110 transition-all"
                   >
-                    <a href={info.link} target="_blank">
-                    <img src={info.img} alt='social icons' width={20} height={20} />
-                    </a>
+                    <Link href={info.link} target="_blank">
+                    <Image src={info.img} alt='social icons' width={20} height={20} />
+                    </Link>
                   </div>
                 ))}
                 <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black rounded-lg border border-red-100/[0.5] hover:scale-110 transition-all">
-                  <a href="/LucianBellevueResume.pdf" target="_blank">
-                  <img src='/pdf.svg' alt='pdf icon' width={20} height={20} />
-                  </a>
+                  <Link href="/LucianBellevueResume.pdf" target="_blank">
+                  <Image src='/pdf.svg' alt='pdf icon' width={20} height={20} />
+                  </Link>
                 </div>
           </div>
         </div>

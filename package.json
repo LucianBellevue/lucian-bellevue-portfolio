@@ -17,7 +17,7 @@
     "framer-motion": "^11.2.10",
     "koa": "^2.15.3",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.3",
+    "next": "^14.2.24",
     "next-themes": "^0.3.0",
     "pspdfkit": "^2024.3.2",
     "react": "^18",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.3.18",
     "@types/react-dom": "^18",
     "@types/react-lottie": "^1.2.10",
     "eslint": "^8",

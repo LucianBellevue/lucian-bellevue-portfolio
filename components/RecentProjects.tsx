@@ -1,8 +1,10 @@
 "use client";
 
+import React from "react";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 import { CiLocationArrow1 } from "react-icons/ci";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -31,10 +33,15 @@ const RecentProjects = () => {
                   style={{ backgroundColor: "rgb(0, 0, 0, 0)" }}
                 >
                 </div>
-                <img
+                <Image
                   src={img}
                   alt="cover"
                   className="z-10 absolute bottom-0"
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                  height={100}
+                  width={100}
                 />
               </div>
 
@@ -62,7 +69,7 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index * 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image src={icon} alt="icon5" className="p-2" height={48} width={48} />
                     </div>
                   ))}
                 </div>
