@@ -36,12 +36,9 @@ const RecentProjects = () => {
                 <Image
                   src={img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
-                  layout="fill"
-                  objectFit="cover"
+                  className="z-10 absolute bottom-0 object-cover"
+                  fill
                   quality={100}
-                  height={100}
-                  width={100}
                 />
               </div>
 

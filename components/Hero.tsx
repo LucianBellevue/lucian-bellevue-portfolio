@@ -37,7 +37,7 @@ const Hero = () => {
             Welcome to my portfolio
           </p>
           <TextGenerateEffect
-            words="Hello, I&apos;m Lucian! a Full-Stack Software Engineer."
+            words="Hello, I&apos;m Lucian! a Frontend Software Engineer."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
