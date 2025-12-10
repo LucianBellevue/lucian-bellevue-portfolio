@@ -2,8 +2,9 @@
 import React from "react";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import dynamic from "next/dynamic";
 
-import Lottie from "react-lottie";
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 import { cn } from "@/utils/cn";
 
@@ -101,6 +102,8 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
+    if (typeof window === 'undefined') return;
+    
     const text = "lucian@lucianbellevue.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
@@ -254,7 +257,9 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {typeof window !== 'undefined' && (
+                  <Lottie options={defaultOptions} height={200} width={400} />
+                )}
               </div>
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy email address"}
